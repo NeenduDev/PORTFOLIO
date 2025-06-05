@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeenduDev/PORTFOLIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeenduDev/PORTFOLIO/issues"
+  },
+  "homepage": "https://github.com/NeenduDev/PORTFOLIO#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.89.1"
+  }
+}
