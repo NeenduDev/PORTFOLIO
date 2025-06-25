@@ -28,7 +28,7 @@ let barInterval = setInterval(() => {
     gsap.to(".loading__svg", {
       duration: 10,
       opacity: 1,
-      // rotate: "360deg",
+      rotate: "360deg",
     });
 
     gsap.to(".loading__box", {
@@ -38,14 +38,14 @@ let barInterval = setInterval(() => {
     gsap.to(".loading", {
       delay: 2,
       duration: 2,
-      //zIndex: 1,
+      // zIndex: 1,
       background: "transparent",
       opacity: 0.5,
     });
     gsap.to(".loading__svg", {
       delay: 2,
       duration: 100,
-      // rotate: "360deg",
+      rotate: "360deg",
     });
   }
 }, 20);
