@@ -5,11 +5,16 @@
   background: #111;
   color: #fff;
   overflow: hidden;
+  background-image: url("../images/wallpapers/4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
   .header {
     position: absolute;
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
     &__wrap {
       padding: 10px;
       display: flex;
@@ -48,89 +53,131 @@
       }
     }
   }
-}
 
-.socials {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 10rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.scrollDown {
-  position: absolute;
-  bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
+  .socials {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 2;
+  }
+  .scrollDown {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
 
-  &__wheel {
-    height: 42px;
-    width: 24px;
-    border-radius: 10px;
-    border: 2px solid #fff;
+    &__wheel {
+      height: 42px;
+      width: 24px;
+      border-radius: 10px;
+      border: 2px solid #fff;
 
-    &--inner {
-      position: absolute;
-      left: 10px;
-      margin-top: 5px;
-      width: 4px;
-      height: 4px;
-      background: #fff;
-      border-radius: 50%;
-      animation: movingwheel 0.5s linear infinite;
+      &--inner {
+        position: absolute;
+        left: 10px;
+        margin-top: 5px;
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        border-radius: 50%;
+        animation: movingwheel 0.5s linear infinite;
 
-      @keyframes movingwheel {
-        0% {
-          top: 1px;
+        @keyframes movingwheel {
+          0% {
+            top: 1px;
+          }
+          25% {
+            top: 2px;
+          }
+          50% {
+            top: 3px;
+          }
+          75% {
+            top: 2px;
+          }
+          100% {
+            top: 1px;
+          }
         }
-        25% {
-          top: 2px;
+      }
+    }
+    .scrollDown__arrows {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .scrollDown__arrow {
+        width: 15px;
+        height: 15px;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(45deg);
+        animation: scrollAnim 1s infinite;
+        animation-direction: alternate;
+      }
+      .scrollDown__arrow:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .scrollDown__arrow:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .scrollDown__arrow:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      @keyframes scrollAnim {
+        0% {
+          opacity: 0;
         }
         50% {
-          top: 3px;
-        }
-        75% {
-          top: 2px;
+          opacity: 0.5;
         }
         100% {
-          top: 1px;
+          opacity: 1;
         }
       }
     }
   }
-  .scrollDown__arrows {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .scrollDown__arrow {
-      width: 15px;
-      height: 15px;
-      border-right: 2px solid #fff;
-      border-bottom: 2px solid #fff;
-      transform: rotate(45deg);
-      animation: scrollAnim 1s infinite;
-      animation-direction: alternate;
+  .intro {
+    position: absolute;
+    top: 21%;
+    left: 1rem;
+    width: 100%;
+    height: 60%;
+    z-index: 2;
+    color: #fff;
+    font-family: "Noir-et-Blanc", sans-serif;
+    font-family: "extravaganzza", sans-serif;
+    font-family: "yorkville", sans-serif;
+    & h4 {
+      font-size: 33px;
     }
-    .scrollDown__arrow:nth-child(1) {
-      animation-delay: 0.1s;
+
+    & h1 {
+      font-size: 35px;
+      width: 93%;
+      padding-top: 1rem;
     }
-    .scrollDown__arrow:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-    .scrollDown__arrow:nth-child(3) {
-      animation-delay: 0.3s;
-    }
-    @keyframes scrollAnim {
-      0% {
-        opacity: 0;
+    @media (min-width: 600px) {
+      & h4 {
+        font-size: 40px;
       }
-      50% {
-        opacity: 0.5;
+      & h1 {
+        font-size: 55px;
       }
-      100% {
-        opacity: 1;
+    }
+
+    @media (min-width: 1200px) {
+      & {
+        left: 5%;
+      }
+      & h4 {
+        font-size: 50px;
+      }
+      & h1 {
+        font-size: 70px;
       }
     }
   }
