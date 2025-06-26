@@ -21,6 +21,31 @@
       display: flex;
       align-items: center;
       gap: 2rem;
+      & li {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+    @media (max-width: 1200px) {
+      &__wrap {
+        width: 100vw;
+      }
+    }
+    @media (max-width: 650px) {
+      &__sm {
+        display: none;
+      }
+    }
+    @media (max-width: 370px) {
+      & {
+        left: 36%;
+      }
+      &__wrap {
+        gap: 20%;
+      }
+      .coolLink[data-text="Home"] {
+        display: none;
+      }
     }
   }
 }
