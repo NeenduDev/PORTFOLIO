@@ -148,8 +148,8 @@
     height: 60%;
     z-index: 2;
     color: #fff;
-    font-family: "Noir-et-Blanc", sans-serif;
-    font-family: "extravaganzza", sans-serif;
+    // font-family: "Noir-et-Blanc", sans-serif;
+    // font-family: "extravaganzza", sans-serif;
     font-family: "yorkville", sans-serif;
     & h4 {
       font-size: 33px;
@@ -159,6 +159,12 @@
       font-size: 35px;
       width: 93%;
       padding-top: 1rem;
+    }
+    & h1:nth-child(2) {
+      font-family: "Noir-et-Blanc", sans-serif;
+    }
+    .country {
+      font-family: "Noir-et-Blanc", sans-serif;
     }
     @media (min-width: 600px) {
       & h4 {
