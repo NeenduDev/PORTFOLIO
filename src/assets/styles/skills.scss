@@ -43,18 +43,18 @@
         }
       }
     }
-    @media (max-width: 700px) {
-      & {
-        height: 200px;
+  }
+  @media (max-width: 700px) {
+    & {
+      height: 200px;
+    }
+    &__text {
+      font-size: 25px;
+      &--left {
+        top: 5rem;
       }
-      &__text {
-        font-size: 25px;
-        &--left {
-          top: 5rem;
-        }
-        &--right {
-          top: 8rem;
-        }
+      &--right {
+        top: 8rem;
       }
     }
   }

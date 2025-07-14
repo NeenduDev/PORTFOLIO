@@ -13,6 +13,7 @@
 
 * {
   margin: 0;
+  // padding: 0; dont do this. you are too late now
   box-sizing: border-box;
   &:after,
   &:before {

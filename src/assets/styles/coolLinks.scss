@@ -72,6 +72,14 @@
   & span {
     mix-blend-mode: difference;
     font-weight: 500;
+    display: inline-block; /* Required for transform to work on inline elements */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  &:hover span {
+    transform: translateY(-5px); /* Move text up 2px on hover */
+  }
+  &:not(:hover) span {
+    transform: translateY(0); /* Return to default position when not hovered */
   }
   &:after {
     content: "";
