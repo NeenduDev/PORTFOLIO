@@ -3,6 +3,7 @@
   position: relative;
   background: $darkish-blue;
   color: #fff;
+  user-select: none;
   &__header {
     display: flex;
     align-items: center;
@@ -65,7 +66,7 @@
 }
 
 .swiper {
-  min-height: 500px;
+  min-height: 250px;
 }
 
 .review {
@@ -114,6 +115,6 @@
     display: flex;
     flex-direction: column;
     font-family: "Josefin Sans Std", sans-serif;
-    font-size: 17px;
+    font-size: 16px;
   }
 }
