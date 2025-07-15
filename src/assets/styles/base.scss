@@ -63,3 +63,18 @@ $dark-green-color: #6cff8c7a;
 $red-color: #f44336;
 $blue-color: #2196f3;
 $yellow-color: #ffea5c;
+$darkish-blue: #060b11;
+$box-shadow-blue1: rgba(31, 38, 135, 0.27);
+$box-shadow-blue2: rgba(31, 38, 135, 0.67);
+
+/*-----Predefined classes------*/
+.section {
+  padding: 1rem;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-top: 5rem;
+
+  @media (min-width: 650px) {
+    padding: 5rem;
+  }
+}

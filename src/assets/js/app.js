@@ -49,3 +49,16 @@ let barInterval = setInterval(() => {
     });
   }
 }, 20);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollers = document.querySelectorAll(".skills_text");
+
+  scrollers.forEach((scroller) => {
+    // Get the content from the scroller
+    const scrollerContent = scroller.innerHTML;
+
+    // Duplicate the content and add it back
+    // The "aria-hidden" makes the duplicate invisible to screen readers
+    scroller.innerHTML += `<span aria-hidden="true">${scrollerContent}</span>`;
+  });
+});
