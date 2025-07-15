@@ -1,5 +1,7 @@
 import gsap from "gsap";
 
+import Swiper from "swiper";
+
 const bar = document.querySelector(".loading__bar--inner");
 const counter_num = document.querySelector(".loading__counter--number");
 let c = 0;
@@ -61,4 +63,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // The "aria-hidden" makes the duplicate invisible to screen readers
     scroller.innerHTML += `<span aria-hidden="true">${scrollerContent}</span>`;
   });
+});
+
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
