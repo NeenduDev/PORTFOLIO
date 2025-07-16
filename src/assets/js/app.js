@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import Swiper from "swiper";
+import { Pagination, Navigation } from "swiper/modules";
 import { reviews } from "./data";
 
 const bar = document.querySelector(".loading__bar--inner");
@@ -66,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // swiper
+Swiper.use([Pagination, Navigation]);
 var swiper = new Swiper(".swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -73,6 +75,7 @@ var swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  watchSlidesProgress: true,
   breakpoints: {
     850: {
       slidesPerView: 2,
@@ -83,6 +86,15 @@ var swiper = new Swiper(".swiper", {
     1900: {
       slidesPerView: 4,
     },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 const swiper_container = document.querySelector(".swiper-wrapper");
@@ -116,3 +128,7 @@ reviews.map((review) => {
 </div>`;
   swiper_container.innerHTML += template;
 });
+// Then add two empty placeholder slides
+for (let i = 0; i < 2; i++) {
+  swiper_container.innerHTML += `<div class="swiper-slide swiper-slide-placeholder"></div>`;
+}
