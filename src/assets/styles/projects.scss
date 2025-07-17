@@ -1,0 +1,134 @@
+.projects {
+  &__header {
+    font-size: 60px;
+    font-style: italic;
+    padding-bottom: 10px;
+  }
+}
+
+.project {
+  &__header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    font-family: sans-serif;
+    span {
+      border-top: 1px solid #000;
+      padding: 1rem;
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  &__infos {
+    margin-top: 1rem;
+    &--name {
+      position: relative;
+      font-size: 3vw;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+    }
+  }
+  &__img {
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    img {
+      width: 60vw;
+      height: 600px;
+      object-fit: scale-down;
+      position: absolute;
+      right: 10vw;
+      top: 3rem;
+    }
+  }
+
+  &__links {
+    padding-top: 3rem;
+    button {
+      &:before {
+        background: #000;
+      }
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.coolCircleEyeButton {
+  position: relative;
+  display: inline-block;
+
+  .textcircle {
+    display: block;
+    height: 250px;
+    animation: rotate 7s linear infinite;
+    text {
+      font-size: 32px;
+      text-transform: uppercase;
+      fill: #000;
+    }
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  &:hover {
+    text {
+      font-weight: 500;
+    }
+    .eye__inner,
+    .eye__iris,
+    .eye__lashes-up {
+      animation: hide 2s step-end infinite;
+    }
+
+    @keyframes hide {
+      0% {
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+    }
+    .eye__lashes-down {
+      animation: show 2s step-end infinite;
+
+      @keyframes show {
+        0% {
+          opacity: 1;
+        }
+        10% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.eye {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__outer,
+  &__inner,
+  &__lashes-up,
+  &__lashes-down {
+    stroke: #000;
+    fill: none;
+    stroke-width: 1.5px;
+  }
+  &__lashes-down {
+    opacity: 0;
+  }
+}
