@@ -142,3 +142,7 @@ questions.map((question) => {
     question.classList.toggle("open");
   });
 });
+
+document.querySelector(".coolButton").addEventListener("click", () => {
+  document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
+});

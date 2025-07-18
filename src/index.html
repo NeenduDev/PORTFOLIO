@@ -159,7 +159,10 @@
             </li>
           </ul>
           <div class="header__right">
-            <button class="coolButton"><span>Contact</span></button>
+            <!-- <button class="coolButton"><span>Contact</span></button> -->
+            <button href="#contact" class="coolButton">
+              <span>Contact</span>
+            </button>
           </div>
         </div>
       </header>
@@ -484,32 +487,53 @@
       </div>
     </div>
     <!-- contact -->
-    <section class="section contact">
+    <section class="section contact" id="contact">
       <div class="contact__wrapper">
         <div class="contact__header">
           <div class="section__header-title">/Contact</div>
           <div class="section__header-subtitle">Get in touch</div>
         </div>
         <div class="contact__form">
-          <form action="#" class="form">
+          <form
+            action="https://formsubmit.co/06a3c3beaabbd65cfd5553e897ae2f34"
+            method="POST"
+          >
             <div class="form__flex">
               <div class="form__info">
                 <label>Hey, My name is </label>
-                <input type="text" placeholder="Type Here" />
+                <input
+                  type="text"
+                  placeholder="Type Here"
+                  name="full name"
+                  required
+                />
               </div>
               <div class="form__info">
                 <label>I'm looking for</label>
-                <input type="text" placeholder="Type of service" />
+                <input
+                  type="text"
+                  placeholder="Type of service"
+                  name="service"
+                  required
+                />
               </div>
             </div>
             <div class="form__flex">
               <div class="form__info">
                 <label>Get in touch with me at</label>
-                <input type="text" placeholder="Your Email id here" />
+                <input
+                  type="text"
+                  placeholder="Your Email id here"
+                  name="email address"
+                />
               </div>
             </div>
             <div class="form__flex">
-              <textarea placeholder="Your Message"></textarea>
+              <textarea
+                placeholder="Your Message"
+                name="message"
+                required
+              ></textarea>
             </div>
             <div class="form__flex">
               <button class="coolButton">
