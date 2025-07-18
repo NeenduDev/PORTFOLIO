@@ -71,11 +71,14 @@ Swiper.use([Pagination, Navigation]);
 var swiper = new Swiper(".swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
+  rewind: true,
+  resistanceRatio: 0.95,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   watchSlidesProgress: true,
+  watchOverflow: true,
   breakpoints: {
     850: {
       slidesPerView: 2,
@@ -128,7 +131,3 @@ reviews.map((review) => {
 </div>`;
   swiper_container.innerHTML += template;
 });
-// Then add two empty placeholder slides
-for (let i = 0; i < 2; i++) {
-  swiper_container.innerHTML += `<div class="swiper-slide swiper-slide-placeholder"></div>`;
-}

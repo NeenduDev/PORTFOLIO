@@ -143,12 +143,6 @@
   transform: scale(1) !important;
 }
 
-.swiper-slide-placeholder {
-  visibility: hidden; // Makes the slide invisible but still takes up space
-  pointer-events: none; // Prevents interaction with the placeholder
-  height: 1px; // Minimal height
-}
-
 .swiper__tools {
   position: relative;
   display: flex;
