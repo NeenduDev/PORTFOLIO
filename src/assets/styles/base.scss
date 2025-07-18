@@ -79,4 +79,15 @@ $box-shadow-blue2: rgba(31, 38, 135, 0.67);
   @media (min-width: 650px) {
     padding: 5rem;
   }
+  &__header {
+    &-title {
+      font-weight: 400;
+      font-size: 17px;
+      color: #666;
+    }
+    &-subtitle {
+      font-size: 27px;
+      font-weight: 700;
+    }
+  }
 }

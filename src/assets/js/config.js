@@ -6,3 +6,4 @@ import "../styles/skills.scss";
 import "../styles/swiper.scss";
 import "../styles/reviews.scss";
 import "../styles/projects.scss";
+import "../styles/faq.scss";
