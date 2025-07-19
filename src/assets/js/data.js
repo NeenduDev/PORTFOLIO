@@ -6,7 +6,7 @@ let reviews = [
     position: "Founder of iCET",
     image: images.niroth,
     review:
-      "Anjitha has consistently demonstrated strong academic performance and an eagerness to learn. His dedication to both his studies and practical work has been impressive.",
+      "Through our iCP program, a two-year higher diploma that combines academic coursework with practical industry experience to develop skilled software engineers, Anjitha transformed his passion into a career.",
   },
   {
     name: "Dewmal Hadapangoda",
@@ -20,7 +20,7 @@ let reviews = [
     position: "MSc.(SE), MBCS(UK), RITTech",
     image: images.frank,
     review:
-      "Anjitha handled tight deadlines with professionalism. His technical skills and composed approach to challenges were truly admirable.",
+      "Anjitha has consistently demonstrated strong academic performance and an eagerness to learn. His dedication to both his studies and practical work has been impressive.",
   },
   {
     name: "Sharadha Marasinghe",

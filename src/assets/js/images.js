@@ -8,6 +8,10 @@ import nethma from "../images/avatars/Nethma Kannangara.jpeg";
 import pawani from "../images/avatars/Pawani Alahakoon.jpeg";
 import prathiba from "../images/avatars/Prathibha Weerasinghe.jpeg";
 import bg from "../images/wallpapers/219.jpg";
+import buddha from "../images/buddha.jpg";
+import ruwanwalisaya from "../images/ruwnwalisaya.jpg";
+import jethawanaya from "../images/jethawanaya.jpg";
+import sigiriya from "../images/sigiriya.jpg";
 
 const images = {
   niroth,
@@ -20,6 +24,10 @@ const images = {
   pawani,
   prathiba,
   bg,
+  buddha,
+  ruwanwalisaya,
+  jethawanaya,
+  sigiriya,
 };
 
 export default images;

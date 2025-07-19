@@ -12,7 +12,7 @@
 
   .header {
     position: absolute;
-    top: 1rem;
+    top: -100%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -59,7 +59,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10rem;
+    bottom: -100%;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -67,7 +67,7 @@
   }
   .scrollDown {
     position: absolute;
-    bottom: 3rem;
+    bottom: -100%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -188,4 +188,8 @@
       }
     }
   }
+}
+
+.landing canvas {
+  position: absolute;
 }

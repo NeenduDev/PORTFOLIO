@@ -50,8 +50,23 @@ let barInterval = setInterval(() => {
       duration: 100,
       rotate: "360deg",
     });
+    gsap.to("header", {
+      duration: 1,
+      delay: 2,
+      top: "0",
+    });
+    gsap.to(".socials", {
+      duration: 1,
+      delay: 2.5,
+      bottom: "10rem",
+    });
+    gsap.to(".scrollDown", {
+      duration: 1,
+      delay: 3,
+      bottom: "3rem",
+    });
   }
-}, 20);
+}, 5);
 
 document.addEventListener("DOMContentLoaded", () => {
   const scrollers = document.querySelectorAll(".skills_text");
