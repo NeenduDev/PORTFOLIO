@@ -135,8 +135,8 @@ class Shaded {
     this.offset.x = lerp(this.offset.x, this.targetX, 0.1);
     this.offset.y = lerp(this.offset.y, this.targetY, 0.1);
     this.uniforms.uOffset.value.set(
-      (this.targetX - this.offset.x) * 0.0003,
-      -(this.targetY - this.offset.y) * 0.0003
+      (this.targetX - this.offset.x) * 0.0006,
+      -(this.targetY - this.offset.y) * 0.0006
     );
     this.mesh.position.set(
       this.offset.x - window.innerWidth / 2,
