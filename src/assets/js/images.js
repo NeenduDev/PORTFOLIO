@@ -6,7 +6,6 @@ import sachin from "../images/avatars/Sachin Samarawickrama.jpeg";
 import sharadha from "../images/avatars/Sharada Marasinghe.jpeg";
 import nethma from "../images/avatars/Nethma Kannangara.jpeg";
 import pawani from "../images/avatars/Pawani Alahakoon.jpeg";
-import prathiba from "../images/avatars/Prathibha Weerasinghe.jpeg";
 import bg from "../images/wallpapers/219.jpg";
 import buddha from "../images/buddha.jpg";
 import ruwanwalisaya from "../images/ruwnwalisaya.jpg";
@@ -22,7 +21,6 @@ const images = {
   sharadha,
   nethma,
   pawani,
-  prathiba,
   bg,
   buddha,
   ruwanwalisaya,

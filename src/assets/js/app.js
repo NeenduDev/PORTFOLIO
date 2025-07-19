@@ -71,7 +71,7 @@ Scrollbar.use(DisableScrollPlugin, LoaderLockPlugin, AnchorPlugin);
 
 // Initialize scrollbar with loader lock
 const scrollbar = Scrollbar.init(document.body, {
-  damping: 0.1,
+  damping: 0.05,
   plugins: {
     loaderLock: { locked: true },
     disableScroll: { direction: "x" },
