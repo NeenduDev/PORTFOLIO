@@ -29,6 +29,8 @@
   },
   "dependencies": {
     "gsap": "^3.13.0",
+    "imagesloaded": "^5.0.0",
+    "smooth-scrollbar": "^8.8.4",
     "swiper": "^11.2.10",
     "three": "^0.178.0"
   }
