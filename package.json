@@ -13,6 +13,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": [
+    "defaults"
+  ],
   "bugs": {
     "url": "https://github.com/NeenduDev/PORTFOLIO/issues"
   },
@@ -24,6 +27,7 @@
   },
   "dependencies": {
     "gsap": "^3.13.0",
-    "swiper": "^11.2.10"
+    "swiper": "^11.2.10",
+    "three": "^0.178.0"
   }
 }
